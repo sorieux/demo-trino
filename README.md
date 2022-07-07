@@ -89,6 +89,14 @@ use demo;
 select mktsegment, sum(acctbal) as sum_acctbal from customer_sf100 group by mktsegment order by mktsegment;
 ```
 
+Mongo request
+
+```Mongo
+use demo
+show collection
+db.nation_sf10.find()
+```
+
 Federated query Hive/Mongo
 
 ```SQL
