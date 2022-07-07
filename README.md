@@ -14,19 +14,27 @@ Dataset : https://docs.snowflake.com/en/user-guide/sample-data-tpch.html#databas
 Connect to Trino
 
 ```bash
-docker exec -it trino-hdfs3_trino-coordinator_1 trino
+docker exec -it demo-trino_trino-coordinator_1 trino
 ```
 
 Connect to Hive
 
 ```bash
-docker exec -it trino-hdfs3-mongo-mysql_hadoop-node_1 hive
+docker exec -it demo-trino_hadoop-node_1 hive
 ```
 
 Connect to Mongo
 
 ```bash
-docker container exec -it trino-hdfs3-mongo-mysql_mongodb_1 mongo
+docker exec -it demo-trino_mongodb_1 mongo
+```
+
+Connect to Mysql
+
+```bash
+docker exec -it demo-trino_mysql_1 bash
+mysql -u root -p
+pass :> admin
 ```
 
 Show Catalogs
