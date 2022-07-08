@@ -83,6 +83,13 @@ WITH (
     external_location = 'hdfs://hadoop-node:9000/user/hive/warehouse/customer_sf100'
     )
     AS select * from tpch.sf100.customer;
+    
+CREATE TABLE hdfs.demo.customer_sf1000
+WITH (
+    format = 'ORC',
+    external_location = 'hdfs://hadoop-node:9000/user/hive/warehouse/customer_sf1000'
+    )
+    AS select * from tpch.sf1000.customer;
 ```
 
 **Create MongoDB from tpch dataset**
