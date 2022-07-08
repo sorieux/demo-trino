@@ -108,7 +108,7 @@ select mktsegment, sum(acctbal) as sum_acctbal from hdfs.demo.customer_sf100 gro
 
 ```SQL
 use demo;
-select mktsegment, sum(acctbal) as sum_acctbal from customer_sf100 group by mktsegment order by mktsegment;
+select mktsegment, sum(acctbal) as sum_acctbal from demo.customer_sf100 group by mktsegment order by mktsegment;
 ```
 
 **Mongo request**
