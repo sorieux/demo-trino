@@ -113,6 +113,6 @@ select * from hdfs.demo.customer_sf10 as cust inner join mongo.demo.nation_sf10 
 
 Todo
 
-[ ] Multi node
-[ ] Ranger integration
+- [ ] Multi node
+- [ ] Ranger integration
 
