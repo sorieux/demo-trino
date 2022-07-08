@@ -110,3 +110,9 @@ Federated query Hive/Mongo
 ```SQL
 select * from hdfs.demo.customer_sf10 as cust inner join mongo.demo.nation_sf10 as nation on cust.nationkey = nation.nationkey;
 ```
+
+Todo
+
+[ ] Multi node
+[ ] Ranger integration
+
