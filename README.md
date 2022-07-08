@@ -115,8 +115,8 @@ select mktsegment, sum(acctbal) as sum_acctbal from demo.customer_sf100 group by
 
 ```Mongo
 use demo
-show collection
-db.nation_sf10.find()
+show collections
+db.nation_sf100.find()
 ```
 
 **Federated query Hive/Mongo**
