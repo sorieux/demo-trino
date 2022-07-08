@@ -49,7 +49,7 @@ SHOW CATALOGS;
 **Show schemas from catalog**
 
 ```SQL
-SHOW SCHEMAS FROM tpc;
+SHOW SCHEMAS FROM tpch;
 ```
 
 **Show tables from schema**
